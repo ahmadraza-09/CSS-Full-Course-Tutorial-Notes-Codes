@@ -1,0 +1,170 @@
+🟡 CSS Colors
+
+    Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+
+🟡 CSS Color Names
+    
+    In CSS, a color can be specified by using a predefined color name:
+
+    For example:
+
+        Red, Green, Blue, Yellow, Cyan, White etc...
+
+🟡 CSS Background Color
+    
+    You can set the background color for HTML elements:
+
+    For example:
+
+        <h1 style="background-color:DodgerBlue;">Hello World</h1>
+        <p style="background-color:Tomato;">Lorem ipsum...</p>
+
+🟡 CSS Text Color
+    
+    You can set the color of text:
+
+    For example:
+
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+🟡 CSS Border Color
+    
+    You can set the color of borders:
+
+    For example:    
+
+        <h1 style="border:2px solid Tomato;">Hello World</h1>
+        <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+        <h1 style="border:2px solid Violet;">Hello World</h1>
+
+🟡 CSS Color Values
+
+    In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+
+    For example:
+
+        <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+        <h1 style="background-color:#ff6347;">...</h1>
+        <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+🟡 CSS Backgrounds
+    
+    The CSS background properties are used to add background effects for elements.
+
+    There are Five background properties.
+    
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+
+🟡 CSS background-color
+
+    The background-color property specifies the background color of an element.
+
+    The background color of a page is set like this:
+
+        body {
+            background-color: lightblue;
+        }
+
+🟡 Opacity / Transparency
+
+    The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:
+    
+    For example:
+
+        div {
+            background-color: green;
+            opacity: 0.3;
+        }
+
+🟡 Transparency using RGBA 
+    
+    If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:
+
+    For example:
+
+        div {
+            background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+        }
+
+🟡 CSS background-image
+
+    The background-image property specifies an image to use as the background of an element.
+    By default, the image is repeated so it covers the entire element.
+
+    For example:    
+
+        body {
+            background-image: url("paper.gif");
+        }
+
+🟡 CSS background-repeat
+
+    By default, the background-image property repeats an image both horizontally and vertically.
+    Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+
+    For example:
+
+        body {
+            background-image: url("gradient_bg.png");
+        }
+
+        If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
+
+        body {
+            background-image: url("gradient_bg.png");
+            background-repeat: repeat-x;
+        }
+
+🟡 CSS background-repeat: no-repeat
+
+    Showing the background image only once is also specified by the background-repeat property:
+
+    For example:
+
+        body {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+        }
+
+🟡 CSS background-position
+    
+    The background-position property is used to specify the position of the background image.
+
+    For example:
+
+        body {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+🟡 CSS background-attachment
+    
+    The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+
+    For example:
+
+        body {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+
+        Specify that the background image should scroll with the rest of the page:
+
+        body {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: scroll;
+        }

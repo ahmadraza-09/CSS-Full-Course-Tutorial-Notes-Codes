@@ -1,0 +1,11 @@
+div {
+    max-width: 500px;
+    height: 100px;
+    background-color: black;
+    /* border: 5px ridge red; */
+    /* border-radius: 55%; */
+    /* border-left: 5px ridge red;
+    border-right: 5px ridge red; */
+    /* border-top-left-radius: 55%;
+    border-bottom-right-radius: 55%; */
+}
