@@ -1,0 +1,90 @@
+🟡 The CSS Box Model
+
+    In CSS, the term "box model" is used when talking about design and layout.
+    The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins. The image below illustrates the box model:
+
+    Explanation of the different parts:
+
+    Content - The content of the box, where text and images appear
+    Padding - Clears an area around the content. The padding is transparent
+    Border - A border that goes around the padding and content
+    Margin - Clears an area outside the border. The margin is transparent
+
+    For example: 
+
+        div {
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+        }
+
+🟡 Width and Height of an Element
+
+    In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
+
+🔴 Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the total width and height of an element, you must also include the padding and borders.
+
+
+    For example:
+
+    This <div> element will have a total width of 350px and a total height of 80px: 
+
+    div {
+        width: 320px;
+        height: 50px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+    }
+
+    Here is the calculation:
+
+    320px (width of content area) + 20px (left padding + right padding) 
+    + 10px (left border + right border)
+    = 350px (total width)
+
+    50px (height of content area)
+    + 20px (top padding + bottom padding)
+    + 10px (top border + bottom border)
+    = 80px (total height)
+
+🟡 CSS Outline
+
+    An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+
+    CSS has the following outline properties:
+
+    outline-style
+    outline-color
+    outline-width
+    outline-offset
+    outline
+
+🔴 Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.
+
+🟡 CSS Outline Style
+
+    The outline-style property specifies the style of the outline, and can have one of the following values:
+
+    dotted - Defines a dotted outline
+    dashed - Defines a dashed outline
+    solid - Defines a solid outline
+    double - Defines a double outline
+    groove - Defines a 3D grooved outline
+    ridge - Defines a 3D ridged outline
+    inset - Defines a 3D inset outline
+    outset - Defines a 3D outset outline
+    none - Defines no outline
+    hidden - Defines a hidden outline
+    
+    For example:
+
+        p.dotted {outline-style: dotted;}
+        p.dashed {outline-style: dashed;}
+        p.solid {outline-style: solid;}
+        p.double {outline-style: double;}
+        p.groove {outline-style: groove;}
+        p.ridge {outline-style: ridge;}
+        p.inset {outline-style: inset;}
+        p.outset {outline-style: outset;}
