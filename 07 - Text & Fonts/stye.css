@@ -1,0 +1,59 @@
+h1 {
+    /* background-color: black;
+    color: red; */
+    color: white;
+    text-shadow: 5px 5px 10px black, 0 0 25px blue,
+        0 0 5px darkblue;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+h1 {
+    /* text-align: center; */
+    /* text-align: right; */
+}
+
+p {
+    /* font-weight: 900; */
+    /* text-align: center; */
+    text-align: justify;
+    /* letter-spacing: 20px; */
+    /* line-height: 50px; */
+    /* word-spacing: 20px; */
+    /* white-space: none; */
+    /* text-transform: uppercase; */
+}
+
+p {
+    /* text-align-last: right; */
+    /* text-align-last: center;
+    text-align-last: justify; */
+    /* direction: rtl; */
+    /* text-indent: 100px; */
+}
+
+p img {
+    vertical-align: sub;
+    width: 50px;
+}
+
+h2 {
+    /* text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5px; */
+    text-decoration: line-through red dotted 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    /* text-transform: uppercase; */
+    /* font-variant: small-caps; */
+    font-size: 20px;
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+}
