@@ -1,0 +1,23 @@
+*  {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent {
+    /* height: 100px;
+    height: 100vh; */
+    height: 400px;
+    width: 50%;
+    /* height: 100%; */
+    /* border: 2px solid red; */
+    background-color: red;
+}
+
+.child {
+    height: 100px;
+    background-color: green;
+    /* width: 50vw;
+    height: 100vh; */
+    height: 100%;
+    width: 50%;
+}
