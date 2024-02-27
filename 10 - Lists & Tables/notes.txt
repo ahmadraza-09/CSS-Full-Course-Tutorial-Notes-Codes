@@ -1,0 +1,242 @@
+🟡 CSS Lists
+
+🟡 HTML Lists and CSS List Properties
+
+    In HTML, there are two main types of lists:
+
+        unordered lists (<ul>) - the list items are marked with bullets
+        ordered lists (<ol>) - the list items are marked with numbers or letters
+
+    The CSS list properties allow you to:
+
+        Set different list item markers for ordered lists
+        Set different list item markers for unordered lists
+        Set an image as the list item marker
+        Add background colors to lists and list items
+
+🟡 Different List Item Markers
+
+    The list-style-type property specifies the type of list item marker.
+
+    The following example shows some of the available list item markers:
+
+        ul.a {
+        list-style-type: circle;
+        }
+
+        ul.b {
+        list-style-type: square;
+        }
+
+        ol.c {
+        list-style-type: upper-roman;
+        }
+
+        ol.d {
+        list-style-type: lower-alpha;
+        }
+
+🟡 An Image as The List Item Marker
+    
+    The list-style-image property specifies an image as the list item marker:
+
+    For example:
+
+        ul {
+            list-style-image: url('sqpurple.gif');
+        }
+
+🟡 Position The List Item Markers
+
+    The list-style-position property specifies the position of the list-item markers (bullet points).
+
+    "list-style-position: outside;" means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default:
+
+    For example:
+
+        ul.a {
+        list-style-position: outside;
+        }
+
+        ul.b {
+        list-style-position: inside;
+        }
+
+🟡 Remove Default Settings
+    
+    The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>:
+
+    For example:
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+🟡 List - Shorthand property
+
+    The list-style property is a shorthand property. It is used to set all the list properties in one declaration:
+
+    For example:    
+
+        ul {
+            list-style: square inside url("sqpurple.gif");
+        }
+
+🟡 Styling List With Colors
+
+    We can also style lists with colors, to make them look a little more interesting.
+    Anything added to the <ol> or <ul> tag, affects the entire list, while properties added to the <li> tag will affect the individual list items:
+
+    For example:    
+
+        ol li {
+            background: #ffe5e5;
+            color: darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        ul li {
+            background: #cce5ff;
+            color: darkblue;
+            margin: 5px;
+        }
+
+🟡 CSS Tables
+
+    The look of an HTML table can be greatly improved with CSS:
+
+🟡 Table Borders
+
+    To specify table borders in CSS, use the border property.
+    The example below specifies a solid border for <table>, <th>, and <td> elements:
+
+    For example:
+
+        table, th, td {
+            border: 1px solid;
+        }
+
+🟡 Full-Width Table
+
+    The table above might seem small in some cases. If you need a table that should span the entire screen (full-width), add width: 100% to the <table> element:
+
+    For example:    
+
+        table {
+            width: 100%;
+        }
+
+🟡 Collapse Table Borders
+
+    The border-collapse property sets whether the table borders should be collapsed into a single border:
+
+    For example:
+
+        table {
+            border-collapse: collapse;
+        }
+
+    If you only want a border around the table, only specify the border property for <table>:
+
+        table {
+            border: 1px solid;
+        }
+
+🟡 Table Width and Height
+
+    The width and height of a table are defined by the width and height properties.
+    The example below sets the width of the table to 100%, and the height of the <th> elements to 70px:
+
+    For example:
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            height: 70px;
+        }
+
+🟡 Horizontal Alignment
+
+    The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+    By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+    To center-align the content of  <td> elements as well, use text-align: center:
+
+    For example:
+
+        td {
+            text-align: center;
+        }
+
+🟡 Vertical Alignment
+
+    The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+    By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
+    The following example sets the vertical text alignment to bottom for <td> elements:
+
+    For example:
+
+        td {
+            height: 50px;
+            vertical-align: bottom;
+        }
+
+🟡 Table Padding
+    
+    To control the space between the border and the content in a table, use the padding property on <td> and <th> elements:
+    
+    For example:
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+🟡 Horizontal Dividers
+
+    Add the border-bottom property to <th> and <td> for horizontal dividers:
+
+    For example:
+
+        th, td {
+            border-bottom: 1px solid #ddd;
+        }
+
+🟡 Hoverable Table
+    
+    Use the :hover selector on <tr> to highlight table rows on mouse over:
+
+    For example:
+
+        tr:hover {
+            background-color: coral;
+        }
+
+🟡 Table Color
+
+    The example below specifies the background color and text color of <th> elements:
+
+    For example:
+
+        th {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+🟡 Responsive Table
+
+    A responsive table will display a horizontal scroll bar if the screen is too small to display the full content:
+
+    For example:
+
+        <div style="overflow-x:auto;">
+
+        <table>
+        ... table content ...
+        </table>
+
+        </div>
