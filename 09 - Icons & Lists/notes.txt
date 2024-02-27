@@ -1,0 +1,155 @@
+🟡 CSS Icons
+
+    Icons can easily be added to your HTML page, by using an icon library.
+
+🟡 How To Add Icons
+
+    The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+    Add the name of the specified icon class to any inline HTML element (like <i> or <span>).
+    All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)
+
+🟡 Font Awesome Icons
+
+    To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the <head> section of your HTML page:
+    
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+🟡 Bootstrap Icons
+
+    To use the Bootstrap glyphicons, add the following line inside the <head> section of your HTML page:
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+🟡 Google Icons
+
+    To use the Google icons, add the following line inside the <head> section of your HTML page:
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+🟡 CSS Links
+
+    With CSS, links can be styled in many different ways.
+
+🟡 Styling Links
+
+    Links can be styled with any CSS property (e.g. color, font-family, background, etc.).
+
+    For example:
+
+        a {
+            color: hotpink;
+        }
+    
+    In addition, links can be styled differently depending on what state they are in.
+
+    The four links states are:
+
+    a:link - a normal, unvisited link
+    a:visited - a link the user has visited
+    a:hover - a link when the user mouses over it
+    a:active - a link the moment it is clicked
+
+    For example:
+
+        /* unvisited link */
+        a:link {
+        color: red;
+        }
+
+        /* visited link */
+        a:visited {
+        color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+        color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+        color: blue;
+        }
+
+🟡 Text Decoration
+
+    The text-decoration property is mostly used to remove underlines from links:
+
+    For example:
+
+        a:link {
+        text-decoration: none;
+        }
+
+        a:visited {
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: underline;
+        }
+
+        a:active {
+        text-decoration: underline;
+        }
+
+🟡 Background Color
+    
+    The background-color property can be used to specify a background color for links:
+
+    For example:
+
+        a:link {
+        background-color: yellow;
+        }
+
+        a:visited {
+        background-color: cyan;
+        }
+
+        a:hover {
+        background-color: lightgreen;
+        }
+
+        a:active {
+        background-color: hotpink;
+        } 
+
+🟡 Link Buttons
+
+    This example demonstrates a more advanced example where we combine several CSS properties to display links as boxes/buttons:
+
+    For example:
+
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+
+🟡 Types Of Cursors in different links
+
+    <span style="cursor: auto">auto</span><br>
+    <span style="cursor: crosshair">crosshair</span><br>
+    <span style="cursor: default">default</span><br>
+    <span style="cursor: e-resize">e-resize</span><br>
+    <span style="cursor: help">help</span><br>
+    <span style="cursor: move">move</span><br>
+    <span style="cursor: n-resize">n-resize</span><br>
+    <span style="cursor: ne-resize">ne-resize</span><br>
+    <span style="cursor: nw-resize">nw-resize</span><br>
+    <span style="cursor: pointer">pointer</span><br>
+    <span style="cursor: progress">progress</span><br>
+    <span style="cursor: s-resize">s-resize</span><br>
+    <span style="cursor: se-resize">se-resize</span><br>
+    <span style="cursor: sw-resize">sw-resize</span><br>
+    <span style="cursor: text">text</span><br>
+    <span style="cursor: w-resize">w-resize</span><br>
+    <span style="cursor: wait">wait</span>
