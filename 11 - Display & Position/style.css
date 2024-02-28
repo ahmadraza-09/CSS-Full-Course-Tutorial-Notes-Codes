@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+div {
+    /* display: inline; */
+}
+
+span {
+    /* display: block; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    /* background-color: white; */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.position {
+    border: 2px solid #000;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    /* position: absolute; */
+    /* position: fixed; */
+    top: 30px;
+    left: 30px;
+}
