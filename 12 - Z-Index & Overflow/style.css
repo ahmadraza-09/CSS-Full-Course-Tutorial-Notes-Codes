@@ -1,0 +1,105 @@
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+div {
+    /* display: inline; */
+}
+
+span {
+    /* display: block; */
+}
+
+/* p {
+    z-index: 1;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    /* position: sticky; */
+    top: 0px;
+    z-index: 1;
+    /* background-color: white; */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.position {
+    border: 2px solid #000;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    /* position: absolute; */
+    /* position: fixed; */
+    top: 30px;
+    left: 30px;
+}
+
+.container1 {
+    border: 2px solid #000;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
+}
+
+.box1 {
+    position: absolute;
+    top: 10px;
+    height: 200px;
+    width:300px;
+    background-color: red;
+    z-index: 1;
+}
+
+.box2 {
+    position: absolute;
+    top: 35px;
+    height: 200px;
+    width:300px;
+    background-color: green;
+    z-index: 2;
+}
+
+.box3 {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    height: 200px;
+    width:300px;
+    background-color: blue;
+    z-index: 3;
+}
+
+.box4 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    height: 200px;
+    width:300px;
+    background-color: black;
+    z-index: 4;
+}
+
+.paragraph {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #000;
+    margin: 20px auto;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+}
