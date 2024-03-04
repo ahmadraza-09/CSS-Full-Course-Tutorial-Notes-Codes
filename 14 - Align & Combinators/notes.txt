@@ -1,0 +1,149 @@
+🟡 Horizontal & Vertical Align
+
+🟡 Center Align Elements
+
+    To horizontally center a block element (like <div>), use margin: auto;
+
+    Setting the width of the element will prevent it from stretching out to the edges of its container.
+
+    The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+
+    For example:   
+
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+        }
+
+🟡 Center Align Text
+
+    To just center the text inside an element, use text-align: center;
+
+    For example:
+
+        .center {
+            text-align: center;
+            border: 3px solid green;
+        }
+
+🟡 Center an Image
+    
+    To center an image, set left and right margin to auto and make it into a block element:
+
+    For example:
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+
+🟡 Left and Right Align - Using position
+    
+    One method for aligning elements is to use position: absolute;:
+
+    For example:
+
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+🟡 Left and Right Align - Using float
+    
+    Another method for aligning elements is to use the float property:
+
+    For example:
+
+        .right {
+            float: right;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+🟡 Center Vertically - Using padding
+    
+    There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding:
+
+    For example:
+
+        .center {
+            padding: 70px 0;
+            border: 3px solid green;
+        }
+
+🟡 Center Vertically - Using Flexbox
+    
+    You can also use flexbox to center things. Just note that flexbox is not supported in IE10 and earlier versions:
+
+    For example:
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid green;
+        }
+
+🟡 CSS Combinators
+
+    A combinator is something that explains the relationship between the selectors.
+
+    A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+    There are four different combinators in CSS:
+
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+
+🟡 Descendant Selector
+    
+    The descendant selector matches all elements that are descendants of a specified element.
+
+    The following example selects all <p> elements inside <div> elements: 
+
+        div p {
+            background-color: yellow;
+        }
+
+🟡 Child Selector (>)
+
+    The child selector selects all elements that are the children of a specified element.
+
+    The following example selects all <p> elements that are children of a <div> element:
+
+        div > p {
+            background-color: yellow;
+        }
+
+🟡 Adjacent Sibling Selector (+)
+
+    The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+    Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+    The following example selects the first <p> element that are placed immediately after <div> elements:
+
+        div + p {
+            background-color: yellow;
+        }
+
+🟡 General Sibling Selector (~)
+
+    The general sibling selector selects all elements that are next siblings of a specified element.
+
+    The following example selects all <p> elements that are next siblings of <div> elements: 
+
+        div ~ p {
+            background-color: yellow;
+        }

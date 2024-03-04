@@ -1,0 +1,42 @@
+.container {
+    width: 600px;
+    height: 500px;
+    background-color: red;
+    margin: auto;
+    /* text-align: center; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container img {
+    width: 200px;
+    display: block;
+    /* margin: auto; */
+    /* position: absolute; */
+    /* right: 0px; */
+    /* left: 0px; */
+    /* top: 0px; */
+    /* bottom: 0px; */
+    float: left;
+    /* padding: 100px 0px; */
+}
+
+.container > h1 {
+    background-color: yellow;
+}
+
+div + p {
+    /* background-color: yellow; */
+}
+
+.general-selector ~ p {
+    background-color: yellow;
+}
+
+/* .container ~ p {
+    background-color: yellow;
+} */
