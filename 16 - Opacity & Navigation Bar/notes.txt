@@ -1,0 +1,52 @@
+🟡 CSS Opacity / Transparency
+
+    The opacity property specifies the opacity/transparency of an element.
+
+🟡 Transparent Image
+    
+    The opacity property can take a value from 0.0 - 1.0. The lower the value, the more transparent:
+
+    For example:
+
+        img {
+            opacity: 0.5;
+        }
+
+🟡 Transparent Hover Effect
+
+    The opacity property is often used together with the :hover selector to change the opacity on mouse-over:
+
+    For example:
+
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1.0;
+        }
+
+🟡 CSS Navigation Bar
+
+🟡 Navigation Bars
+
+    Having easy-to-use navigation is important for any web site.
+
+    With CSS you can transform boring HTML menus into good-looking navigation bars.
+
+🟡 Navigation Bar = List of Links
+
+    A navigation bar needs standard HTML as a base.
+
+    In our examples we will build the navigation bar from a standard HTML list.
+
+    A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense:
+
+    For example:
+
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
