@@ -1,0 +1,195 @@
+🟡 CSS Dropdowns
+
+    Create a hoverable dropdown with CSS.
+
+🟡 Basic Dropdown
+
+    Create a dropdown box that appears when the user moves the mouse over an element.
+
+    For example:
+
+        <style>
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        </style>
+
+        <div class="dropdown">
+        <span>Mouse over me</span>
+            <div class="dropdown-content">
+                <p>Hello World!</p>
+            </div>
+        </div>
+
+    Example Explained
+
+    HTML) Use any element to open the dropdown content, e.g. a <span>, or a <button> element.
+
+    Use a container element (like <div>) to create the dropdown content and add whatever you want inside of it.
+
+    Wrap a <div> element around the elements to position the dropdown content correctly with CSS.
+
+    CSS) The .dropdown class uses position:relative, which is needed when we want the dropdown content to be placed right below the dropdown button (using position:absolute).
+
+    The .dropdown-content class holds the actual dropdown content. It is hidden by default, and will be displayed on hover (see below). Note the min-width is set to 160px. Feel free to change this. Tip: If you want the width of the dropdown content to be as wide as the dropdown button, set the width to 100% (and overflow:auto to enable scroll on small screens).
+
+    Instead of using a border, we have used the CSS box-shadow property to make the dropdown menu look like a "card".
+
+    The :hover selector is used to show the dropdown menu when the user moves the mouse over the dropdown button.
+
+🟡 Dropdown Menu
+
+    Create a dropdown menu that allows the user to choose an option from a list:
+
+    For example:
+
+        <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        </div>
+
+🟡 CSS Forms
+
+    The look of an HTML form can be greatly improved with CSS:
+
+🟡 Styling Input Fields
+    
+    Use the width property to determine the width of the input field:
+
+    For example:
+
+        input {
+            width: 100%;
+        }
+
+    The example above applies to all <input> elements. If you only want to style a specific input type, you can use attribute selectors:
+
+    input[type=text] - will only select text fields
+    input[type=password] - will only select password fields
+    input[type=number] - will only select number fields
+    etc..
+
+🟡 Padded Inputs
+
+    Use the padding property to add space inside the text field.
+
+    Tip: When you have many inputs after each other, you might also want to add some margin, to add more space outside of them:
+
+    For example:
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+🟡 Bordered Inputs
+    
+    Use the border property to change the border size and color, and use the border-radius property to add rounded corners:
+
+    For example:
+
+        input[type=text] {
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+
+🟡 Colored Inputs
+    
+    Use the background-color property to add a background color to the input, and the color property to change the text color:
+
+    For example:
+
+        input[type=text] {
+            background-color: #3CBC8D;
+            color: white;
+        }
+
+🟡 Focused Inputs
+
+    By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding outline: none; to the input.
+
+    Use the :focus selector to do something with the input field when it gets focus:
+
+    For example:
+
+        input[type=text]:focus {
+            background-color: lightblue;
+        }
+
+🟡 Input with icon/image
+    
+    If you want an icon inside the input, use the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:
+
+    For example:
+
+        input[type=text] {
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+        }
+
+🟡 Animated Search Input
+    
+    In this example we use the CSS transition property to animate the width of the search input when it gets focus.
+
+    For example:
+
+        input[type=text] {
+            transition: width 0.4s ease-in-out;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+
+🟡 Styling Textareas
+    
+    Tip: Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):
+
+    For example:
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+
+🟡 Styling Select Menus
+
+    For example:
+
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
